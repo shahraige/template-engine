@@ -1,0 +1,15 @@
+@media screen {
+  p {
+
+    //padding-top: rem(15px);
+    @include media-breakpoint-down(md) {
+      font-size: $responsive-font-size;
+    }
+
+    b,
+    strong {
+      font-family: $web-font-heavy;
+      font-weight: bold;
+    }
+  }
+}

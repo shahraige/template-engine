@@ -1,0 +1,27 @@
+// @usage `@include font-face-mixin(TEXT, 'path/to/font/file', normal, normal);`
+
+// @note Older syntax for: TTF/WOFF/SVG
+// @mixin font-face-mixin($font-family, $file-path, $font-weight, $font-style) {
+//   @font-face {
+//     font-family: $font-family;
+//     src:
+//       url('#{$file-path}' + '.ttf') format('truetype'),
+//       url('#{$file-path}' + '.woff') format('woff'),
+//       url('#{$file-path}' + '.svg##{random(987654321)}-#{random(123456789)}') format('svg');
+//     font-weight: $font-weight;
+//     font-style: $font-style;
+//   }
+// }
+
+// @note WOFF/WOFF2 syntax only. Welcome to 2017!
+// @usage `@include font-face-mixin(TEXT, 'path/to/font/file', normal, normal);`
+@mixin font-face-mixin($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src:
+      url('#{$file-path}' + '.woff2') format('woff2'),
+      url('#{$file-path}' + '.woff') format('woff');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}

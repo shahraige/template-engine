@@ -1,0 +1,10 @@
+// Convert font-size from px to rem with px fallback
+// @param $size - the value in pixel you want to convert
+// @usage e.g. `p { @include font-size-rem-mixin(12); }`
+// @see https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+// @see https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin font-size-rem-mixin($size) {
+  // font-size: $size;
+  font-size: rem($size);
+}

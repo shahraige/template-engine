@@ -1,0 +1,19 @@
+// @usage `@include margin-rem-mixin(1, 2, 3, 4);`
+@mixin margin-rem-mixin(
+  $margin-top: null,
+  $margin-right: null,
+  $margin-bottom: null,
+  $margin-left: null) {
+  @if($margin-top) {
+    margin-top: rem($margin-top);
+  }
+  @if($margin-right) {
+    margin-right: rem($margin-right);
+  }
+  @if($margin-bottom) {
+    margin-bottom: rem($margin-bottom);
+  }
+  @if($margin-left) {
+    margin-left: rem($margin-left);
+  }
+}

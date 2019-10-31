@@ -1,2 +1,25 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// variables
+@import "variables/_variables-loader";
+
+// Foundation
+@import "foundation/_foundation-loader";
+
+// Sass Functions
+@import "sass-functions/sass-functions-loader";
+
+// Sass Mixins
+@import "sass-mixins/_sass-mixins-loader";
+
+// Atoms
+@import "atoms/_atoms-loader";
+
+// Components
+@import "components/components-loader";
+
+// Thirdparty Loader
+@import "thirdparty/_thirdparty-loader";
+
+// Custom
 @import "custom";

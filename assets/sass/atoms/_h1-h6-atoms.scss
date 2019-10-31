@@ -1,0 +1,39 @@
+@media screen {
+  h1,
+  h2,
+  h3,
+  h4 {
+    //color: $primary;
+    font-family: $web-font-medium;
+    font-weight: bold;
+    padding-top: rem(15px);
+
+  }
+
+  h1{
+    color: $primary;
+    font-size: $responsive-font-size * 1.667; 
+  }
+  h2{
+    @include media-breakpoint-down(md) {
+      font-size: rem(25px);
+    }
+  }
+  h3{
+    color: $black;
+    font-size: rem(21px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(18px);
+    }
+  }
+  h4{
+    font-size: rem(18px);
+  }
+  h5{
+    color: $black;
+    font-size: rem(15px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(12px);
+    }
+  }
+}

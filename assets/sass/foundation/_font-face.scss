@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Graphik Regular';
+    font-style : normal;
+    font-weight: normal;
+    src        : local('Graphik Regular'), url('../../fonts/GraphikRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Medium';
+    font-style : normal;
+    font-weight: normal;
+    src        : local('Graphik Medium'), url('../../fonts/GraphikMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Bold'), url('../../fonts/GraphikBold.woff') format('woff');
+}

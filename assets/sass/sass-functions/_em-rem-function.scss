@@ -1,0 +1,25 @@
+// px to em converter
+// @usage `font-size: em(12px);`
+$browsing-context: 16px;
+@function em($pixels, $context: $browsing-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $browsing-context * 1em;
+}
+
+// px to rem converter
+// @usage `font-size: rem(12px);`
+@function rem($pixels, $context: $browsing-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $browsing-context * 1rem;
+}
+

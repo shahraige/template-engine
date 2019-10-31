@@ -1,0 +1,20 @@
+// Custom Scrollbar Design
+// @usage `@include scrollbars(.5em, slategray);`
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  & {
+    overflow: auto;
+  }
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: $foreground-color;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background: $background-color;
+  }
+}
+
